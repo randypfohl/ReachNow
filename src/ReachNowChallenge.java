@@ -9,17 +9,17 @@ import java.util.Set;
 
 public class ReachNowChallenge {
 	
-	String array;
+	String input;
 	
-	public ReachNowChallenge(String array) {
-		this.array = array;
+	public ReachNowChallenge(String input) {
+		this.input = input;
 	}
 	
-	public Character[][] getFrequencyArray(String array){
+	public Character[][] getFrequencyArray(){
 		// Create frequency map
 		Map<Character, Integer> map = new HashMap<Character, Integer>();
 		
-		for(char x : array.toCharArray()) {
+		for(char x : input.toCharArray()) {
 			
 			if(!map.containsKey(x)) {
 				map.put(x, 1);
